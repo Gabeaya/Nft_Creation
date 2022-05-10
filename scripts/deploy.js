@@ -3,19 +3,20 @@
 
 //oimport ethers
 
-const { deployContract } = require("ethereum-waffle");
+
 const {ethers} = require("hardhat");
 
 async function main() {
+
   //things we want the function to do:
   //We want the script to  determnie what contract to deploy
   const contract = await ethers.getContractFactory("NFT");
   //Deploy it
   const deployedContract = await contract.deploy();
   //Await completion of deployment
-  await deployContract.deployed();
+  await deployedContract.deployed();
   // Print the contract address
-  console.log("Nft deployed to: ", deployContract.address)
+  console.log("Nft deployed to: ", deployedContract.address)
 
 }
 
