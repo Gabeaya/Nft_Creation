@@ -9,7 +9,7 @@ contract NFT is ERC721{
     //Create an ERC721 contract
     //Mint some NFTS
 
-    constructor () ERC721("Learn NFT", "LNFT"){
+    constructor () ERC721("NFT", "LNFT"){
         _mint (msg.sender, 1);
     }
 }
